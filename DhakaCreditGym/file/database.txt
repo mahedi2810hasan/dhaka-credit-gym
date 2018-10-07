@@ -56,3 +56,16 @@ created_date datetime,
 created_by nvarchar(50)
 
 )
+
+CREATE TABLE [dbo].[tbl_Payment_Receive]
+(
+	[paymentNo] INT NOT NULL PRIMARY KEY IDENTITY, 
+    [m_id] INT NULL, 
+    [pay_date] DATETIME NULL, 
+    [pay_type] NVARCHAR(30) NULL, 
+    [pay_amount] DECIMAL(8, 2) NULL, 
+    [pay_discount] DECIMAL(8, 2) NULL, 
+    [pay_total] DECIMAL(8, 2) NULL, 
+    [created_by] NVARCHAR(15) NULL
+
+)
