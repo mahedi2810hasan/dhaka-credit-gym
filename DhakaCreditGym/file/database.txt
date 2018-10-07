@@ -69,3 +69,18 @@ CREATE TABLE [dbo].[tbl_Payment_Receive]
     [created_by] NVARCHAR(15) NULL
 
 )
+
+
+CREATE TABLE [dbo].[tbl_Expenditure]
+(
+	[exp_id] INT NOT NULL PRIMARY KEY identity, 
+    [emp_id] INT NULL, 
+    [exp_purpose] NVARCHAR(30) NULL, 
+    [exp_for] NVARCHAR(30) NULL, 
+    [exp_description] NVARCHAR(30) NULL, 
+    [exp_amount] DECIMAL(8, 2) NULL, 
+    [created_date] DATETIME NULL, 
+    [created_by] NVARCHAR(30) NULL
+
+)
+
