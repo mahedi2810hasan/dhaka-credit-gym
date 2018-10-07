@@ -26,3 +26,33 @@ emp_Status nvarchar(10),
 Created_Date datetime,
 Created_By nvarchar(15) Default 'Admin'
 )
+
+
+
+create table tbl_Members(
+m_id int primary key identity,
+m_first_name nvarchar(50),
+m_middle_name nvarchar(50),
+m_last_name nvarchar(50),
+m_date_of_birth datetime,
+m_nid_no int,
+m_father_name nvarchar(50),
+m_mother_name nvarchar(50),
+m_religion nvarchar(20),
+m_gender nvarchar(15),
+m_marital_status nvarchar(20),
+m_present_address nvarchar(150),
+m_permanent_address nvarchar(150),
+m_phone nvarchar(20),
+m_email nvarchar(max),
+m_occupation nvarchar(50),
+m_working_address nvarchar(150),
+m_group nvarchar(30),
+m_catagory nvarchar(30),
+m_code int,
+m_cccul_membership_no nvarchar(50),
+m_status nvarchar(15),
+created_date datetime,
+created_by nvarchar(50)
+
+)
