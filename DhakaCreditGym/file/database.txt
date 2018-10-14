@@ -1,4 +1,31 @@
-﻿create table tbl_Employees(
+﻿create table tbl_Members(
+m_id int primary key identity,
+m_first_name nvarchar(50),
+m_middle_name nvarchar(50),
+m_last_name nvarchar(50),
+m_date_of_birth datetime,
+m_nid_no int,
+m_father_name nvarchar(50),
+m_mother_name nvarchar(50),
+m_religion nvarchar(20),
+m_gender nvarchar(15),
+m_marital_status nvarchar(20),
+m_present_address nvarchar(150),
+m_permanent_address nvarchar(150),
+m_phone nvarchar(20),
+m_email nvarchar(max),
+m_occupation nvarchar(50),
+m_working_address nvarchar(150),
+m_group nvarchar(30),
+m_catagory nvarchar(30),
+m_code int,
+m_cccul_membership_no nvarchar(50),
+m_status nvarchar(15),
+created_date datetime,
+created_by nvarchar(50)
+)
+
+create table tbl_Employees(
 emp_Id int primary key identity,
 emp_First_Name nvarchar(15),
 emp_Middle_Name nvarchar(15),
@@ -24,40 +51,17 @@ emp_Salary decimal(8,2),
 emp_Image nvarchar(max),
 emp_Status nvarchar(10),
 Created_Date datetime,
-Created_By nvarchar(15) Default 'Admin'
+Created_By nvarchar(50)
 )
 
-
-
-create table tbl_Members(
-m_id int primary key identity,
-m_first_name nvarchar(50),
-m_middle_name nvarchar(50),
-m_last_name nvarchar(50),
-m_date_of_birth datetime,
-m_nid_no int,
-m_father_name nvarchar(50),
-m_mother_name nvarchar(50),
-m_religion nvarchar(20),
-m_gender nvarchar(15),
-m_marital_status nvarchar(20),
-m_present_address nvarchar(150),
-m_permanent_address nvarchar(150),
-m_phone nvarchar(20),
-m_email nvarchar(max),
-m_occupation nvarchar(50),
-m_working_address nvarchar(150),
-m_group nvarchar(30),
-m_catagory nvarchar(30),
-m_code int,
-m_cccul_membership_no nvarchar(50),
-m_status nvarchar(15),
-created_date datetime,
+create table tbl_Employee_Ref(
+ref_id int primary key identity,
+ref_description nvarchar(250),
+created_date datetime default(getdate()),
 created_by nvarchar(50)
-
 )
 
-CREATE TABLE [dbo].[tbl_Payment_Receive]
+CREATE TABLE tbl_Payment_Receive
 (
 	[paymentNo] INT NOT NULL PRIMARY KEY IDENTITY, 
     [m_id] INT NULL, 
@@ -66,12 +70,10 @@ CREATE TABLE [dbo].[tbl_Payment_Receive]
     [pay_amount] DECIMAL(8, 2) NULL, 
     [pay_discount] DECIMAL(8, 2) NULL, 
     [pay_total] DECIMAL(8, 2) NULL, 
-    [created_by] NVARCHAR(15) NULL
-
+    [created_by] NVARCHAR(50) NULL
 )
 
-
-CREATE TABLE [dbo].[tbl_Expenditure]
+CREATE TABLE tbl_Expenditure
 (
 	[exp_id] INT NOT NULL PRIMARY KEY identity, 
     [emp_id] INT NULL, 
@@ -80,7 +82,19 @@ CREATE TABLE [dbo].[tbl_Expenditure]
     [exp_description] NVARCHAR(30) NULL, 
     [exp_amount] DECIMAL(8, 2) NULL, 
     [created_date] DATETIME NULL, 
-    [created_by] NVARCHAR(30) NULL
-
+    [created_by] NVARCHAR(50) NULL
 )
+
+create table tbl_Users(
+[user_id] int primary key identity,
+[user_name] nvarchar(50),
+[user_password] nvarchar(200),
+[user_role] nvarchar(30),
+[user_status] nvarchar(15),
+emp_id int,
+m_id int,
+created_date datetime default(getdate()),
+created_by nvarchar(50)
+)
+
 
