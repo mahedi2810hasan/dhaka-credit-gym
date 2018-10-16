@@ -1274,7 +1274,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\EmployeeBL.cs" />
+    <Compile Include="Models\Business Logic\EmployeeBL.cs" />
+    <Compile Include="Models\PaymentReceive.cs" />
+    <Compile Include="Models\Business Logic\paymentReceiveBL.cs" />
     <Compile Include="Models\Employees.cs" />
     <Compile Include="Models\GymEntity.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
