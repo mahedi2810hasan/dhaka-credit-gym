@@ -1275,6 +1275,8 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Business Logic\EmployeeBL.cs" />
+    <Compile Include="Models\Business Logic\MemberBL.cs" />
+    <Compile Include="Models\Members.cs" />
     <Compile Include="Models\PaymentReceive.cs" />
     <Compile Include="Models\Business Logic\paymentReceiveBL.cs" />
     <Compile Include="Models\Employees.cs" />
