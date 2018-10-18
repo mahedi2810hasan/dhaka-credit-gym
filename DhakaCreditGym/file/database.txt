@@ -97,4 +97,9 @@ created_date datetime default(getdate()),
 created_by nvarchar(50)
 )
 
+create table tbl_Membership(
+id int primary key identity,
+membership_id int
+)
+
 
