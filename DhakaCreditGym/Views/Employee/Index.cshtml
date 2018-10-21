@@ -1,0 +1,178 @@
+﻿@model IEnumerable<DhakaCreditGym.Models.Employees>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table table-hover">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_First_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Middle_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Last_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Date_Of_Birth)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_NiD_Number)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Father_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Mother_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Religion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Gender)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Marital_Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Spouse_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Present_Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Permanent_Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Phone)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Blood_Group)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Last_Academic_Certification)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Last_Academic_Certification_Result)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Joining_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Designation)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.emp_Status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created_Date)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Created_By)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_First_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Middle_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Last_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Date_Of_Birth)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_NiD_Number)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Father_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Mother_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Religion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Gender)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Marital_Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Spouse_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Present_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Permanent_Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Phone)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Blood_Group)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Last_Academic_Certification)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Last_Academic_Certification_Result)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Joining_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Designation)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Image)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.emp_Status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created_Date)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Created_By)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.emp_Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.emp_Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.emp_Id })
+        </td>
+    </tr>
+}
+
+</table>
