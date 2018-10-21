@@ -13,7 +13,7 @@ namespace DhakaCreditGym.Models
         string constring = ConfigurationManager.ConnectionStrings["cccul_db"].ConnectionString;
         public void NewEmployee(Employees e)
         {
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "insert into tbl_Employees values('"+e.emp_First_Name+"','"+e.emp_Middle_Name+"','"+e.emp_Last_Name+"','"+e.emp_Date_Of_Birth+"','"
                 +e.emp_NiD_Number+"','"+e.emp_Father_Name+"','"+e.emp_Mother_Name+"','"+e.emp_Religion+"','"+e.emp_Gender+"','"+e.emp_Marital_Status+"','"
@@ -27,7 +27,7 @@ namespace DhakaCreditGym.Models
         public List<Employees>GetAll()
         {
             List<Employees> empList = new List<Employees>();
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "select * From tbl_Employees";
             SqlCommand command = new SqlCommand(query, con);
@@ -69,7 +69,7 @@ namespace DhakaCreditGym.Models
         public Employees Search(int id)
         {
             Employees e = new Employees();
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "select * From tbl_Employees where emp_Id='"+id+"'";
             SqlCommand command = new SqlCommand(query, con);
@@ -108,7 +108,7 @@ namespace DhakaCreditGym.Models
         }
         public void Update(Employees e)
         {
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "update tbl_Employees set emp_First_Name='" + e.emp_First_Name 
                 + "',emp_Middle_Name='" + e.emp_Middle_Name 
