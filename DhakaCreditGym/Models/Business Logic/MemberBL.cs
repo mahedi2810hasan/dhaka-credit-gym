@@ -13,7 +13,7 @@ namespace DhakaCreditGym.Models.Business_Logic
         string constring = ConfigurationManager.ConnectionStrings["cccul_db"].ConnectionString;
         public void NewMember(Members m)
         {
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "insert into tbl_Members values('" + m.M_First_Name + "','" + m.M_Middle_Name + "','" + m.M_Last_Name + "','" + m.M_Date_Of_Birth + "','"
                 + m.M_NiD_Number + "','" + m.M_Father_Name + "','" + m.M_Mother_Name + "','" + m.M_Religion + "','" + m.M_Gender + "','" + m.M_Marital_Status + "','"
@@ -26,7 +26,7 @@ namespace DhakaCreditGym.Models.Business_Logic
         public List<Members> GetAll()
         {
             List<Members> mList = new List<Members>();
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "select * From tbl_Members";
             SqlCommand command = new SqlCommand(query, con);
@@ -66,7 +66,7 @@ namespace DhakaCreditGym.Models.Business_Logic
         public Members Search(int id)
         {
             Members m = new Members();
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "select * From tbl_Member where emp_Id='" + id + "'";
             SqlCommand command = new SqlCommand(query, con);
@@ -103,7 +103,7 @@ namespace DhakaCreditGym.Models.Business_Logic
         }
         public void Update(Members m)
         {
-            SqlConnection con = new SqlConnection();
+            SqlConnection con = new SqlConnection(constring);
             con.Open();
             string query = "update tbl_Members set M_First_Name='" + m.M_First_Name
                 + "',M_Middle_Name='" + m.M_Middle_Name

@@ -1274,6 +1274,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MembersController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -1304,9 +1305,14 @@
     <Content Include="Views\Shared\_MainLayout.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+<<<<<<< HEAD
     <Content Include="Views\Employee\Index.cshtml" />
     <Content Include="Views\Employee\Create.cshtml" />
     <Content Include="Views\Employee\Edit.cshtml" />
+=======
+    <Content Include="Views\Members\Create.cshtml" />
+    <Content Include="Views\Members\Index.cshtml" />
+>>>>>>> 0caa13698cc74e23215b4bbfd4fddcc7c354e813
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
