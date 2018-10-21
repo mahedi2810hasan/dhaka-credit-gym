@@ -16,7 +16,6 @@ F:\TRAINING BACKUP\Course\Mehedi Hasan\GYM1\dhaka-credit-gym\DhakaCreditGym\bin\
 F:\TRAINING BACKUP\Course\Mehedi Hasan\GYM1\dhaka-credit-gym\DhakaCreditGym\bin\DhakaCreditGym.pdb
 F:\TRAINING BACKUP\Course\Mehedi Hasan\GYM1\dhaka-credit-gym\DhakaCreditGym\obj\Debug\DhakaCreditGym.dll
 F:\TRAINING BACKUP\Course\Mehedi Hasan\GYM1\dhaka-credit-gym\DhakaCreditGym\obj\Debug\DhakaCreditGym.pdb
-F:\TRAINING BACKUP\Course\Mehedi Hasan\GYM1\dhaka-credit-gym\DhakaCreditGym\obj\Debug\DhakaCreditGym.csprojResolveAssemblyReference.cache
 E:\Project\Dhaka Credit\dhaka-credit-gym\DhakaCreditGym\bin\ApplicationInsights.config
 E:\Project\Dhaka Credit\dhaka-credit-gym\DhakaCreditGym\bin\roslyn\csc.exe
 E:\Project\Dhaka Credit\dhaka-credit-gym\DhakaCreditGym\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -36,3 +35,4 @@ E:\Project\Dhaka Credit\dhaka-credit-gym\DhakaCreditGym\bin\DhakaCreditGym.pdb
 E:\Project\Dhaka Credit\dhaka-credit-gym\DhakaCreditGym\obj\Debug\DhakaCreditGym.csprojResolveAssemblyReference.cache
 E:\Project\Dhaka Credit\dhaka-credit-gym\DhakaCreditGym\obj\Debug\DhakaCreditGym.dll
 E:\Project\Dhaka Credit\dhaka-credit-gym\DhakaCreditGym\obj\Debug\DhakaCreditGym.pdb
+F:\TRAINING BACKUP\Course\Mehedi Hasan\GYM1\dhaka-credit-gym\DhakaCreditGym\obj\Debug\DhakaCreditGym.csprojResolveAssemblyReference.cache

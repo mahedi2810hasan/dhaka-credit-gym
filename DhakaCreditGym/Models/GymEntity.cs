@@ -9,5 +9,7 @@ namespace DhakaCreditGym.Models
     public class GymEntity: DbContext
     {
         public GymEntity() : base("cccul_db") { }
+
+        public System.Data.Entity.DbSet<DhakaCreditGym.Models.Members> Members { get; set; }
     }
 }
